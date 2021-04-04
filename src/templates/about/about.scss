@@ -1,0 +1,230 @@
+.about{
+    padding-top: 85px;
+    padding-bottom: 20px;
+
+    &__title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 50px;
+        color: #171E30;
+        max-width: 400px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__img{
+        margin-top: 7px;
+        margin-left: -26px;
+    }
+
+    &__images{
+        position: relative;
+    }
+
+    &__decor{
+        position: absolute;
+        bottom: -13px;
+        right: -40px;
+    }
+
+    &__container{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__content{
+        border: 10px solid #E2EDF3;
+        padding: 20px;
+        flex-grow: 1;
+        margin-left: 86px;
+        position: relative;
+        padding: 45px 37px;
+        padding-bottom: 25px;
+    }
+
+    &__content-title{
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    &__content-text p {
+        line-height: 18px;
+        font-size: 14px;
+    }
+
+    &__content-coment{
+        font-size: 14px;
+        line-height: 18px;
+        color: #171E30;
+    }
+
+    &__content-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 51px;
+    }
+
+    &__content-dir{
+        margin-top: -24px;
+        margin-right: 42px;
+    }
+
+    &__content-decor{
+        position: absolute;
+        left: -45px;
+        top: 103px;
+        transform: rotate(-90deg);
+
+        & span{
+            display: block;
+            height: 11px;
+            background-color: #fff;
+            width: 79px;
+            position: relative;
+
+            &::after{
+                content: "";
+                height: 10px;
+                background-color: #E2EDF3;
+                width: 75px;
+                position: absolute;
+                transform: rotate(54deg);
+                bottom: 29px;
+                right: -21px;
+            }
+            &::before{
+                content: "";
+                height: 10px;
+                background-color: #E2EDF3;
+                width: 78px;
+                position: absolute;
+                transform: rotate(-52deg);
+                bottom: 29px;
+                left: -18px;
+            }
+        }
+    }
+
+    &__content-cit{
+        position: absolute;
+        z-index: -1;
+        right: 36px;
+        top: 23px;
+    }
+
+    &__img-mob{
+        display: none;
+    }
+
+    &__content-btn{
+        display: none;
+    }
+
+}
+
+@media(max-width:910px){
+    .about__container{
+        flex-direction: column;
+    }
+    .about__content {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .about__content-decor {
+        transform: none;
+        top: -10px;
+        left: 120px;
+    }
+}
+@media(max-width:475px){
+    .about__title{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .about{
+        padding-top: 17px;
+    }
+    .about__img{
+        display: none;
+    }
+    .about__img-mob{
+        display: block;
+        margin-left: -15px;
+    }
+    .about__decor img{
+        width: 161px;
+    }
+    .about__decor {
+        bottom: 1px;
+        right: 9px;
+    }
+    .about__content-dir{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .about__content-footer{
+        flex-direction: column;
+    }
+    .about__content{
+        margin-top: 31px;
+        padding: 30px 23px;
+        padding-left: 26px;
+        padding-bottom: 7px;
+    }
+    .about__content-decor{
+        left: 201px;
+    }
+    .about__content-decor span{
+        width: 39px;
+
+        &::before{
+            width: 43px;
+            bottom: 16px;
+            left: -12px;
+        }
+        &::after{
+            width: 43px;
+            bottom: 16px;
+            right: -13px;
+        }
+    }
+    .about__content-title{
+        margin-bottom: 0;
+    }
+    .about__content-cit {
+        right: auto;
+        top: 23px;
+        width: 100px;
+        left: 24px;
+    }
+
+    .about__content-btn{
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+
+        &.close{
+            display: none;
+        }
+    }
+    .about__content-footer{
+        display: none;
+
+        &.open{
+            display: flex;
+        }
+    }
+    .about__content-text{
+        height: 268px;
+        overflow: hidden;
+        transition: .3s all;
+
+        &.open{
+            transition: .3s all;
+            height: auto;
+            overflow: auto;
+        }
+    }
+}

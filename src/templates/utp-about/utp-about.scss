@@ -1,0 +1,114 @@
+.utp-about{
+    padding-top: 1px;
+    padding-bottom: 68px;
+    position: relative;
+    z-index: 3;
+
+    &__img{
+        margin-top: 22px;
+        margin-left: 0px;
+    }
+    &__content{
+        margin-top: -10px;
+        margin-left: 113px;
+        padding-top: 25px;
+        padding-right: 16px;
+    }
+
+    &__name{
+        font-size: 24px !important;
+        margin-bottom: 13px;
+    }
+
+    &__img-stap{
+        width: 100%;
+        max-width: 604.15px;
+        height: auto;
+        margin-top: 28px;
+        margin-bottom: 13px;
+    }
+
+    &__decor {
+        position: absolute;
+        bottom: -41px;
+        right: -99px;
+    }
+
+    &__prevue{
+        margin-bottom: 37px;
+    }
+}
+@media(max-width: 1060px){
+    .utp-about__content{
+        margin-left: 63px;
+    }
+}
+@media(max-width: 1010px){
+    .utp-about__container{
+        flex-direction: column;
+    }
+    .utp-about__content {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .utp-about__content-decor{
+        transform: none;
+        top: -10px;
+        left: 120px;
+    }
+    .utp-about__prevue{
+        width: 100%;
+    }
+    .utp-about__title{
+        max-width: 100%;
+    }
+    .utp-about__decor {
+        right: auto;
+        left: 194px;
+    }
+}
+@media(max-width: 610px){
+    .tab__btns{
+        flex-direction: column;
+    }
+    .tab__btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 475px){
+    .utp-about__content-text{
+        height: auto;
+    }
+    .utp-about__img-mob{
+        margin-left: 0;
+        margin-top: 22px;
+    }
+    .utp-about__content {
+        margin-top: 23px;
+        padding-left: 9px;
+        padding-right: 7px;
+        padding-top: 21px;
+        padding-bottom: 14px;
+    }
+    .utp-about__content-decor{
+        left: 201px;
+    }
+    .utp-about__img-stap {
+        margin-top: 19px;
+        min-height: 172.55px;
+        object-fit: cover;
+        margin-bottom: 16px;
+    }
+    .tab__btn{
+        margin-bottom: 14px;
+    }
+    .utp-about{
+        padding-top: 36px;
+        padding-bottom: 30px;
+    }
+    .utp-about__content-wrap{
+        padding-left: 10px;
+        padding-right: 0;
+    }
+}

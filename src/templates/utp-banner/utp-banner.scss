@@ -1,0 +1,176 @@
+.utp-banner{
+
+    &__container{
+        padding-top: 34px;
+        padding-bottom: 31px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__banner{
+        background-image: url(../img/dalos-bg.jpg);
+        max-width: 1687px;
+        width: 100%;
+        background-size: cover;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__content{
+        max-width: 500px;
+        margin-right: 133px;
+        margin-top: 82px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 55px;
+        text-transform: uppercase;
+        color: #171E30;
+        margin: 0;
+    }
+
+    &__descr{
+        font-size: 20px;
+        line-height: 26px;
+        color: #171E30;
+        margin-top: 13px;
+
+        & span{
+            font-weight: bold;
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        max-width: 320px;
+        margin-top: 37px;
+        position: relative;
+        z-index: 4;
+    }
+
+    & .el-decor{
+        left: 41.5%;
+        width: 516px;
+    }
+}
+.utp-content-mob{
+    display: none;
+}
+.decor-line__item--15 {
+    top: 478px;
+    right: -213px;
+}
+.decor-line__item--16{
+    display: none;
+}
+
+
+@media(max-width:1330px){
+    .decor-line__item--15 {
+        top: 394px;
+        right: -126px;
+    }
+}
+@media(max-width:1050px){
+    .decor-line__item--15 {
+        top: 382px;
+        right: -115px;
+    }
+    .utp-banner__content{
+        margin-right: 25px;
+        margin-top: 0;
+    }
+    .utp-banner__container{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .utp-banner__img img{
+        width: 300px;
+    }
+}
+@media(max-width:800px){
+    .utp-banner__title{
+        font-size: 48px;
+        line-height: 55px;
+    }
+    .utp-banner__descr {
+        font-size: 17px;
+    }
+    .utp-banner__btn{
+        margin-top: 23px;
+    }
+}
+@media(max-width: 710px){
+    .utp-banner__img img{
+        width: 230px;
+    }
+
+}
+@media(max-width:580px){
+    .utp-content-mob{
+        display: block;
+    }
+    .utp-banner__descr{
+        margin-top: 26px;
+    }
+    .utp-banner__btn{
+        max-width: 100%;
+    }
+    .utp-banner__content .utp-banner__descr{
+        display: none;
+    }
+    .utp-banner__content .utp-banner__btn{
+        display: none;
+    }
+    .utp-banner__title{
+        margin-bottom: 15px;
+    }
+    .utp-banner__container{
+        flex-direction: column;
+    }
+}
+@media(max-width:475px){
+    .utp-header .decor-line__item--15,
+    .utp-header .decor-line__item--1{
+        display: none;
+    }
+    .decor-line__item--16{
+        display: block;
+        right: -7px;
+        top: 66px;
+    }
+}
+@media(max-width: 440px){
+    .utp-banner__container{
+        align-items: flex-start;
+    }
+    .utp-banner__img{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        & img{
+            width: 185px;
+        }
+    }
+    .utp-banner__title{
+        max-width: 240px;
+    }
+    .utp-banner__container{
+        height: 320px;
+        padding-top: 44px;
+    }
+    .utp-banner__img{
+        position: absolute;
+        bottom: 17px;
+        left: -8px;
+    }
+    .utp-banner__container{
+        background-image: url('../img/mini-header-mob.jpg');
+        background-size: cover;
+    }
+}

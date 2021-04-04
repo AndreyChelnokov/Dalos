@@ -1,0 +1,15 @@
+.utp-featch{
+
+
+    &__descr{
+        max-width: 147px;
+    }
+}
+@media(max-width: 475px){
+    .utp-featch .featch__icon img {
+        width: 36px;
+    }
+    .utp-featch .featch__descr{
+        font-size: 15px;
+    }
+}

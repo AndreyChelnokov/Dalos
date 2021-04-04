@@ -1,0 +1,30 @@
+.bread{
+    padding: 38px 0 20px 0;
+
+    & a,
+    & span{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #171E30;
+        text-decoration: none;
+    }
+
+    &__wrap{
+        display: flex;
+        margin-left: 3px;
+
+        & a{
+            display: block;
+            position: relative;
+            padding-right: 15px;
+
+            &::before{
+                content: ">";
+                position: absolute;
+                right: 4px;
+                top: 1px;
+            }
+        }
+    }
+}
